@@ -6,7 +6,6 @@ body {
 
 }
 .container{
-  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -14,31 +13,13 @@ body {
   background-color:rgb(223, 193, 171);
   padding:5rem;
 }
-/*.site-header { grid-area: site-header; }
-.content { grid-area: content; }
-.site-footer { grid-area: site-footer; }*/
-
-/*header{
-  grid-template-areas:
-  "content owner"
-  "content owner";
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  /*background-image: url("https://placekitten.com/1200/900");
-  background-size: cover;
-  background-position: bottom;
-  background-blend-mode: soft-light;
-  background-color: #ffffff59;
-}*/
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-family: sans-serif;
   padding: 2rem;
   }
 h1{
@@ -48,6 +29,7 @@ h1{
 h2 {
 	font-size: 5rem;
 	line-height: 1.5;
+  margin-bottom: 0;
 	}
 h3 {
 	margin: 28px auto 0px 14px;
@@ -59,8 +41,8 @@ h4 {
   margin-bottom:1.5rem;
 }
 p{
-  font-size: 18px;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 3rem;
   padding: 2rem;
   text-align: justify;
 }
@@ -93,10 +75,6 @@ a:focus {
 }
 .skip-links a:focus{
   top: 0;
-}
-.
-.site-header{
-  background-color: darkgoldenrod;
 }
 nav ul{
   background-color: #6e5d48;
@@ -165,9 +143,6 @@ nav ul li a:hover{
 .submenu li:last-of-type {
   border-bottom: none;
 }
-.content{
-  background-color: burlywood;
-}
 .owner{
      margin: 50px auto;
     width: 80%;
@@ -227,6 +202,7 @@ form textarea {
   color:rgb(212, 211, 211);
   margin-bottom: 1rem;
   padding: .5rem .5rem;
+  margin-top: 0.5rem;
 }
 
 form textarea {
@@ -271,7 +247,7 @@ a#backbtn{
   border: none;
   border-radius: 15px;
   position: absolute;
-  right: 6rem;
+  right: 7rem;
 }
 
 a#backbtn:hover {
@@ -283,6 +259,6 @@ a#backbtn:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-@media screen and (max-width: 44em) {
-
+.site-footer span{
+  padding-left: 3rem;
 }
