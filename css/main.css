@@ -3,7 +3,34 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
+
 }
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color:rgb(223, 193, 171);
+  padding:5rem;
+}
+/*.site-header { grid-area: site-header; }
+.content { grid-area: content; }
+.site-footer { grid-area: site-footer; }*/
+
+/*header{
+  grid-template-areas:
+  "content owner"
+  "content owner";
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  /*background-image: url("https://placekitten.com/1200/900");
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: soft-light;
+  background-color: #ffffff59;
+}*/
 
 h1,
 h2,
@@ -12,12 +39,14 @@ h4,
 h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  padding: 2rem;
   }
 h1{
 	font-size: 7rem;
+  background-color:beige;
 	}
 h2 {
-	font-size: 5.5rem;
+	font-size: 5rem;
 	line-height: 1.5;
 	}
 h3 {
@@ -32,21 +61,21 @@ h4 {
 p{
   font-size: 18px;
   line-height: 2rem;
-  padding: 14px;
+  padding: 2rem;
   text-align: justify;
 }
-.container {
-  max-width: 1080px;
+header .container {
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
-}
 
+}
 img {
   width: 100%;
   height: auto;
 }
 a:focus {
-  outline: 4  px solid black;
+  outline: 4px solid black;
 }
 .skip-links{
   margin: 0;
@@ -64,6 +93,10 @@ a:focus {
 }
 .skip-links a:focus{
   top: 0;
+}
+.
+.site-header{
+  background-color: darkgoldenrod;
 }
 nav ul{
   background-color: #6e5d48;
@@ -99,7 +132,83 @@ nav ul li a {
 nav ul li a:hover{
   text-decoration: underline;
 }
-.contact-section{
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -25px;
+  left: -30px;
+
+  background: #8a7459;
+  border-radius: 5px;
+  padding-top: 60px;
+}
+
+.submenu {
+  display: none;
+  z-index: 100;
+}
+.dropdown a > span {
+  z-index: 200;
+  position: relative;
+}
+.submenu li {
+  list-style: none;
+  border-bottom: 1px solid #fff;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+.submenu li:last-of-type {
+  border-bottom: none;
+}
+.content{
+  background-color: burlywood;
+}
+.owner{
+     margin: 50px auto;
+    width: 80%;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+      'one tree '
+      'two four'
+  }
+  .meet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .meet:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: one;
+  }
+  .owner-info:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: two;
+  }
+  .address-heading:nth-child(3){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area:three ;
+  }
+  .address:nth-child(4){
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area:four;
+  }
+  .contact-section{
   padding: 14px;
   }
    li{
@@ -107,6 +216,9 @@ nav ul li a:hover{
     line-height: 1.5rem;
     padding: 14px;
     list-style-type:none;
+  }
+  form{
+    padding: 2rem;
   }
 form input,
 form textarea {
@@ -145,8 +257,8 @@ form button:active{
 }
 .site-footer {
   padding: 2rem 0;
-}
-a#backbtn{ 
+  }
+a#backbtn{
   display: inline-block;
   padding: 15px 25px;
   font-size:1.5rem;
@@ -158,9 +270,8 @@ a#backbtn{
   background-color: #6e5d48;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgb(165, 165, 165);
   position: absolute;
-  right: 2rem;
+  right: 6rem;
 }
 
 a#backbtn:hover {
@@ -171,4 +282,7 @@ a#backbtn:active {
   background-color: #992828;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+@media screen and (max-width: 44em) {
+
 }
