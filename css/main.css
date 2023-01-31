@@ -154,6 +154,7 @@ nav ul li a:hover{
       'one tree '
       'two four'
   }
+  /*
   .meet{
   display: flex;
   justify-content: center;
@@ -182,7 +183,7 @@ nav ul li a:hover{
   justify-content: center;
   align-items: center;
   grid-area:four;
-  }
+  }*/
   .contact-section{
   padding: 14px;
   }
