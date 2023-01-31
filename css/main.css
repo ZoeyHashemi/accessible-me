@@ -25,6 +25,7 @@ h6 {
 h1{
 	font-size: 7rem;
   background-color:beige;
+  text-transform: uppercase;
 	}
 h2 {
 	font-size: 5rem;
@@ -45,6 +46,12 @@ p{
   line-height: 3rem;
   padding: 2rem;
   text-align: justify;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  }
+  p:after{ 
+    content: " - Read more… ";
+    color:#f00;
 }
 header .container {
   max-width: 100%;
