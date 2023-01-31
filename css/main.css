@@ -115,7 +115,9 @@ nav ul li a {
   font-size: 1.25rem;
 }
 nav ul li a:hover{
-  text-decoration: underline;
+  background-color:bisque;
+  padding:1rem;
+  color:black;
 }
 .dropdown {
   position: relative;
@@ -191,6 +193,15 @@ nav ul li a:hover{
   align-items: center;
   grid-area:four;
   }*/
+p:first-letter{
+  display:block;
+  float:left;
+  /* top: 2px; */
+  /* margin-bottom: 2px; */
+  color:#f00;
+  font-size: 300%;
+  padding: 1rem;
+}
   .contact-section{
   padding: 14px;
   }
